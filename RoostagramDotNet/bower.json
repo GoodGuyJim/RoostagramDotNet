@@ -1,0 +1,17 @@
+{
+  "name": "roostagram.net",
+  "version": "0.1.0",
+  "homepage": "https://github.com/bocoup-education/roost-chicago-2014-app",
+  "authors": [
+    "Bocoup",
+    "Jim Nardecchia (GoodGuyJim)"
+  ],
+  "description": "A .Net implementation of the Bocoup Roostagram application",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "backbone": "~1.1.2",
+    "lodash": "~2.4.1"
+  }
+}

@@ -4,5 +4,6 @@
 # https://help.github.com/articles/ignoring-files#create-a-global-gitignore
 
 /bin/
+/bower_components/
 /node_modules/
 /obj/

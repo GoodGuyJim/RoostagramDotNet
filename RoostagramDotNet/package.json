@@ -1,10 +1,11 @@
 {
-    "name": "roostagram",
+    "name": "roostagram.net",
     "version": "1.0.0",
-    "description": "Roostagram!",
+    "description": "Roostagram.Net!",
     "private": true,
     "scripts": {
-        "test": "grunt lint"
+        "test": "grunt lint",
+        "install": "bower install"
     },
     "devDependencies": {
         "express":  "^4.8.6",
