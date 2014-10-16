@@ -67,6 +67,7 @@
     <Content Include="server\server.js" />
     <Content Include="src\index.html" />
     <Content Include="src\main.js" />
+    <Content Include="src\modules\photo.js" />
     <Content Include="src\styles\app.css" />
     <Content Include="Web.config" />
   </ItemGroup>
