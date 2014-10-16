@@ -10,7 +10,8 @@ For this project I am using IIS Express, I have therefore removed any references
 
 In order to get this working you will need several things installed on your system.
 
---From the original Roostagram readme--
+From the original Roostagram readme:
+
 1. Install [nodejs](http://nodejs.org/). Make sure you install something on the
    v.0.10 release branch. Version 0.11 is a development branch and breaks some
    of the libraries in our application.
@@ -18,7 +19,7 @@ In order to get this working you will need several things installed on your syst
    grunt-cli` into your terminal/command line.
 3. Install [Bower](http://bower.io/) globally by typing `npm install -g bower`.
 
-I am also using[LiveReload](http://livereload.com/) because the original version did, however the Windows version is in alpha and apparently not as stable, but does work. 
+I am also using [LiveReload](http://livereload.com/) because the original version did, however the Windows version is in alpha and apparently not as stable, but does work. 
 It could be removed or disabled if it's causing too many problems for you
 
 This project uses the new Visual Studio extension "Task Runner Explorer", [here's a handy guide on how to set it up](http://www.hanselman.com/blog/introducinggulpgruntbowerandnpmsupportforvisualstudio.aspx),
