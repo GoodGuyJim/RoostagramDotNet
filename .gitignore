@@ -41,3 +41,8 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+*.suo
+RoostagramDotNet/npm-debug.log
+RoostagramDotNet/Properties/AssemblyInfo.cs
+RoostagramDotNet/RoostagramDotNet.csproj.user

@@ -62,6 +62,9 @@
     <Content Include="build\grunt-contrib-watch.js" />
     <Content Include="build\grunt-jscs.js" />
     <Content Include="gruntfile.js" />
+    <Content Include="server\database.js" />
+    <Content Include="server\index.html" />
+    <Content Include="server\server.js" />
     <Content Include="src\index.html" />
     <Content Include="src\main.js" />
     <Content Include="src\styles\app.css" />
@@ -76,6 +79,7 @@
     <Content Include="LICENSE" />
     <None Include="package.json" />
     <Content Include="src\.jshintrc" />
+    <Content Include="server\images.db" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -12,12 +12,18 @@ module.exports = function(grunt) {
 
     // Register alias tasks.
     grunt.registerTask('lint',
-      'Statically analyze the project JavaScript for errors and code style',
-      ['jscs', 'jshint']);
+        'Statically analyze the project JavaScript for errors and code style',
+        ['jscs', 'jshint']);
 
     grunt.registerTask('dev',
-      'Start the watch.',
-      ['lint', 'watch']);
+        'Start the watch.',
+        ['lint', 'server:dev', 'watch']);
+
+    grunt.registerTask('server',
+        'Start the REST and connect servers.',
+        function() {
+            require('./server/server');
+        });
 
     grunt.registerTask('default', ['dev']);
 };
