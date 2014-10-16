@@ -5,15 +5,15 @@
         id: 19
     });
 
+    var photoView = new PhotoView({
+        model: photo
+    });
+
+    photoView.$el.appendTo('body');
+
     photo.fetch({
-        success: function (photo) {
-            console.log(photo);
-
-            // add the photo to the body of our document
-
-            $('<img>', {
-                src: photo.get('dataUri')
-            }).appendTo('body');
+        success: function () {
+            photoView.render();
         }
     });
 }());
