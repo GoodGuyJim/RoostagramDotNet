@@ -1,9 +1,19 @@
 (function() {
     'use strict';
 
-    function awesome() {
-        document.body.innerHTML = '<h1>OMG ROOST</h1>';
-    }
+    var photo = new Photo({
+        id: 19
+    });
 
-    awesome();
+    photo.fetch({
+        success: function (photo) {
+            console.log(photo);
+
+            // add the photo to the body of our document
+
+            $('<img>', {
+                src: photo.get('dataUri')
+            }).appendTo('body');
+        }
+    });
 }());
