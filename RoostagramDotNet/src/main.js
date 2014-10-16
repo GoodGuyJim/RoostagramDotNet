@@ -14,6 +14,11 @@
     photo.fetch({
         success: function () {
             photoView.render();
+        },
+        error: function () {
+            // Just do the same thing since the check
+            // is in the template right now
+            photoView.render();
         }
     });
 }());
