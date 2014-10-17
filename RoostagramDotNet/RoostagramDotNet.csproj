@@ -67,8 +67,9 @@
     <Content Include="server\server.js" />
     <Content Include="src\index.html" />
     <Content Include="src\main.js" />
+    <Content Include="src\modules\components\photo\detail.html" />
+    <Content Include="src\modules\components\photo\detail.js" />
     <Content Include="src\modules\components\photo\model.js" />
-    <Content Include="src\modules\components\photo\view.js" />
     <Content Include="src\requirejs-config.js" />
     <Content Include="src\styles\app.css" />
     <Content Include="Web.config" />

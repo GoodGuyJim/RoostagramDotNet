@@ -6,17 +6,7 @@
         <title>Roostagram.Net!</title>
         <link rel="stylesheet" href="styles/app.css">
     </head>
-    <body>
-
-        <script type="templtate/text" id="photo-detail">
-            <% if (typeof dataUri !== "undefined") { %>
-                <div class="photo">
-                    <img src="<%= dataUri %>" />
-                </div>
-            <% } else { %>
-                <div class="error">Photo not found!</div>
-            <% } %>
-        </script>
+    <body>       
 
         <script src="/bower_components/requirejs/require.js" data-main="requirejs-config"></script>                
 
