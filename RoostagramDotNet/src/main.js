@@ -1,26 +1,18 @@
 define(function(require) {
     'use strict';
-    var Photo = require('src/modules/components/photo/model');
-    var PhotoView = require('src/modules/components/photo/detail');
 
-    var photo = new Photo({
-        id: 19
+    // photo collection view
+    var PhotoCollection = require('src/modules/components/photo/collection');
+    var GalleryView = require('src/modules/components/photo/gallery');
+
+    var photos = new PhotoCollection();
+
+    var gallery = new GalleryView({
+        collection: photos,
+        el: '#app'
     });
 
-    var photoView = new PhotoView({
-        model: photo
-    });
-
-    photoView.$el.appendTo('body');
-
-    photo.fetch({
-        success: function () {
-            photoView.render();
-        },
-        error: function () {
-            // Just do the same thing since the check
-            // is in the template right now
-            photoView.render();
-        }
+    photos.fetch().then(function () {
+        gallery.render();
     });
 });
