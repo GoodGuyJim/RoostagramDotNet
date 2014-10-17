@@ -5,7 +5,7 @@ define(function(require) {
     var PhotoCollection = require('src/modules/components/photo/collection');
     var GalleryView = require('src/modules/components/photo/gallery');
 
-    require('modules/core/router');
+    require('src/modules/core/router');
 
     Backbone.history.start();
 
