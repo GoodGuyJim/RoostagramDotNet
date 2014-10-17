@@ -1,5 +1,7 @@
-define(['src/modules/photo', 'src/modules/view'], function(Photo, PhotoView) {
+define(function(require) {
     'use strict';
+    var Photo = require('src/modules/photo');
+    var PhotoView = require('src/modules/view');
 
     var photo = new Photo({
         id: 19
