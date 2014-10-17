@@ -5,9 +5,6 @@ define(function(require) {
     var $ = require('jquery');
     require('src/modules/core/router');
 
-    var PhotoCollection = require('src/modules/components/photo/collection');
-    var GalleryView = require('src/modules/components/photo/gallery');
-
     Backbone.history.start();
 
     // All navigation that is relative should be passed through the navigate
@@ -22,17 +19,5 @@ define(function(require) {
         // calls this anyways. The fragment is sliced from the root.
         var href = $(this).attr('href');
         Backbone.history.navigate(href, true);
-    });
-
-    var photos = new PhotoCollection();
-
-    // Create gallery view with supplied photo collection
-    var gallery = new GalleryView({
-        collection: photos,
-        el: '#app'
-    });
-
-    photos.fetch().then(function () {
-        gallery.render();
     });
 });
