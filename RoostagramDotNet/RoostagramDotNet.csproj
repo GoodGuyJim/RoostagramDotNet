@@ -73,6 +73,7 @@
     <Content Include="src\modules\components\photo\gallery.html" />
     <Content Include="src\modules\components\photo\gallery.js" />
     <Content Include="src\modules\components\photo\model.js" />
+    <Content Include="src\modules\core\router.js" />
     <Content Include="src\requirejs-config.js" />
     <Content Include="src\styles\app.css" />
     <Content Include="Web.config" />
