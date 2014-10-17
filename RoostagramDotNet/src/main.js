@@ -1,4 +1,4 @@
-(function() {
+define(['src/modules/photo', 'src/modules/view'], function(Photo, PhotoView) {
     'use strict';
 
     var photo = new Photo({
@@ -21,4 +21,4 @@
             photoView.render();
         }
     });
-}());
+});
